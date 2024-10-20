@@ -12,7 +12,7 @@ export class Terminal extends Component {
         this.prev_commands = [];
         this.commands_index = -1;
         this.child_directories = {
-            root: ["books", "projects", "personal-documents", "skills", "languages", "PDPU", "interests"],
+            root: ["books", "projects", "personal-documents", "languages", "PDPU", "interests"],
             PDPU: ["Sem-6"],
             books: ["Eric-Jorgenson_The-Almanack-of-Naval-Ravikant.pdf", "Elon Musk: How the Billionaire CEO of SpaceX.pdf", "The $100 Startup_CHRIS_GUILLEBEAU.pdf", "The_Magic_of_Thinking_Big.pdf"],
             skills: ["Front-end development", "React.js", "jQuery", "Flutter", "Express.js", "SQL", "Firebase"],
@@ -245,66 +245,59 @@ export class Terminal extends Component {
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("vscode");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands:[ cd, ls, pwd, echo, clear, exit, mkdir, code, avril, chrome, about-group8, todoist, trash, settings, sendmsg]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands:[ cd, ls, pwd, echo, clear, exit, mkdir, code, chrome, about-group8, todoist, trash, settings, sendmsg]";
                 }
                 break;
             case "echo":
                 result = this.xss(words.join(" "));
                 break;
-            case "avril":
-                if (words[0] === "." || words.length === 0) {
-                    this.props.openApp("avril");
-                } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, avril, chrome, about-group8, todoist, trash, settings, sendmsg ]";
-                }
-                break;
             case "chrome":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("chrome");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, avril, chrome, about-group8, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, chrome, about-group8, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "todoist":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("todo-ist");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, avril, chrome, about-group8, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, chrome, about-group8, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "trash":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("trash");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, avril, chrome, about-group8, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, chrome, about-group8, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "about-group8":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("about-group8");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, avril, chrome, about-group8, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, chrome, about-group8, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "terminal":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("terminal");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, avril, chrome, about-group8, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, chrome, about-group8, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "settings":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("settings");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, avril, chrome, about-group8, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, chrome, about-group8, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "sendmsg":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("gedit");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, avril, chrome, about-group8, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, chrome, about-group8, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "clear":

@@ -1,4 +1,3 @@
-import displayAvril from './components/apps/avril';
 import displayGithub from './components/apps/github';
 import displayVsCode from './components/apps/vscode';
 import { displayTerminal } from './components/apps/terminal';
@@ -12,7 +11,7 @@ import { displayTerminalCalc } from './components/apps/calc';
 const apps = [
     {
         id: "about-group8",
-        title: "About Me (Double-Click!)",
+        title: "About Us (Double-Click!)",
         icon: './themes/Yaru/system/user-home.png',
         disabled: false,
         favourite: true,
@@ -38,15 +37,6 @@ const apps = [
         screen: displayChrome,
     },
     {
-        id: "avril",
-        title: "beloved Avril",
-        icon: './themes/Yaru/apps/letgo.png',
-        disabled: false,
-        favourite: true,
-        desktop_shortcut: true,
-        screen: displayAvril,
-    },
-    {
         id: "calc",
         title: "Calculator",
         icon: './themes/Yaru/apps/calc.png',
@@ -70,7 +60,7 @@ const apps = [
         icon: './themes/Yaru/apps/bash.png',
         disabled: false,
         favourite: true,
-        desktop_shortcut: false,
+        desktop_shortcut: true,
         screen: displayTerminal,
     },
     {
@@ -90,15 +80,6 @@ const apps = [
         favourite: false,
         desktop_shortcut: true,
         screen: displayTrash,
-    },
-    {
-        id: "gedit",
-        title: "Contact Me",
-        icon: './themes/Yaru/apps/gedit.png',
-        disabled: false,
-        favourite: false,
-        desktop_shortcut: true,
-        screen: displayGedit,
     },
 ]
 
