@@ -56,7 +56,7 @@ export class Terminal extends Component {
             <React.Fragment key={id}>
                 <div className="flex w-full h-5">
                     <div className="flex">
-                        <div className=" text-ubt-green">HKU@K.I.A.(7211)</div>
+                        <div className=" text-ubt-green">HKU@K.I.A.(7211), input "chat", then start knowing everything about HKU!</div>
                         <div className="text-white mx-px font-medium">:</div>
                         <div className=" text-ubt-blue">{this.current_directory}</div>
                         <div className="text-white mx-px font-medium mr-1">$</div>
@@ -435,3 +435,4 @@ async function callXunfeiChatbot(message) {
         return `Error: ${error.message}. 请检查控制台以获取更多信息。`;
     }
 }
+

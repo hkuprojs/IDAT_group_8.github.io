@@ -3,10 +3,9 @@ import displayVsCode from './components/apps/vscode';
 import { displayTerminal } from './components/apps/terminal';
 import { displaySettings } from './components/apps/settings';
 import { displayChrome } from './components/apps/chrome';
-import { displayTrash } from './components/apps/trash';
-import { displayGedit } from './components/apps/gedit';
 import { displayAboutGroup8 } from './components/apps/group8';
 import { displayTerminalCalc } from './components/apps/calc';
+import Trash from './components/apps/trash'; // 修改了这里的导入语句
 
 const apps = [
     {
@@ -33,7 +32,7 @@ const apps = [
         icon: './themes/Yaru/apps/chrome.png',
         disabled: false,
         favourite: true,
-        desktop_shortcut: true,
+        desktop_shortcut: false,
         screen: displayChrome,
     },
     {
@@ -41,8 +40,8 @@ const apps = [
         title: "Calculator",
         icon: './themes/Yaru/apps/calc.png',
         disabled: false,
-        favourite: true,
-        desktop_shortcut: false,
+        favourite: false,
+        desktop_shortcut: true,
         screen: displayTerminalCalc,
     },
     {
@@ -56,7 +55,7 @@ const apps = [
     },
     {
         id: "terminal",
-        title: "Terminal",
+        title: "HKU@map.A.I.(7211)",
         icon: './themes/Yaru/apps/bash.png',
         disabled: false,
         favourite: true,
@@ -78,8 +77,8 @@ const apps = [
         icon: './themes/Yaru/system/user-trash-full.png',
         disabled: false,
         favourite: false,
-        desktop_shortcut: true,
-        screen: displayTrash,
+        desktop_shortcut: false,
+        screen: () => <Trash />, // 修改了这里的screen参数
     },
 ]
 

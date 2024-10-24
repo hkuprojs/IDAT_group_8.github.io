@@ -53,7 +53,7 @@ export class AboutGroup8 extends Component {
         return (
             <>
                 <div id="about" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "about" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="about group8" src="./public/themes/Yaru/status/about.svg" />
+                    <img className=" w-3 md:w-4" alt="about group8" src="./themes/Yaru/status/about.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">About Me</span>
                 </div>
                 <div id="skills" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "skills" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
@@ -104,7 +104,7 @@ function About() {
                 <img className="w-full h-full object-cover" src="./images/logos/alexander.jpg" alt="Group8 Jobs Logo" />
             </div> */}
             <div className="w-28 md:w-30 my-20 bg-black rounded-full">
-                <img className="w-full" src="./images/logos/alexander-modified.png" alt="Group8 Jobs Logo" />
+                <img className="w-full" src="public/images/logos/alexander-modified.png" alt="Group8 Jobs Logo" />
             </div>
             <div className=" mt-2 md:mt-8 text-lg md:text-2xl text-center px-1">
                 <div>We are <span className="font-bold">(Group8)</span> ,</div>
